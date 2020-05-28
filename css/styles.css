@@ -364,7 +364,7 @@ img {
   background-color: var(--hover-logo-web-color);
 }
 
-.team-social-logo::after {
+/* .team-social-logo::after {
   content: "";
   display: block;
   width: 206px;
@@ -374,8 +374,37 @@ img {
   background-position: center;
   justify-content: space-between;
   outline: 2px solid tomato;
+} */
+
+.soc::after {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 44px;
+  /* background-image: url("../images/logo-instagram.svg"), url("../images/logo-linkedin.svg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: space-between;
+  /* outline: 2px solid tomato; */
+}
+.instagram::after {
+  background-image: url("../images/logo-instagram.svg");
+}
+.instagram:hover::after {
+  background-color: var(--hover-logo-web-color);
+  border-radius: 50%;
+  color: var(--white-color);
 }
 
+.twitter::after {
+  background-image: url("../images/logo-twitter.svg");
+}
+.facebook::after {
+  background-image: url("../images/logo-facebook.svg");
+}
+.linkedin::after {
+  background-image: url("../images/logo-linkedin.svg");
+}
 .team-list .item {
   padding-bottom: 24px;
   background-color: var(--white-color);
