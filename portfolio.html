@@ -23,13 +23,22 @@
         </nav>
 
         <ul class="mail-tel-info">
-          <li class="item mail-tel-box">
-            <img src="./images/image-mail.svg" alt="Піктограма пошти" width="16" height="11" />
-            <a href="mailto:info@devstudio.com" class="mail">info@devstudio.com</a>
+          <li class="item mail-tel-box tel">
+            <a href="mailto:info@devstudio.com" class="mail">
+              <svg class="mail-tel-icon" width="16px" height="12px">
+                <use href="./images/sprite.svg#icon-image-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
-          <li class="item mail-tel-box">
-            <img src="./images/image-tel.svg" alt="Піктограма телефону" width="10" height="14" />
-            <a href="tel:+380961111111" class="tel">+38 096 111 11 11</a>
+          <li class="item mail-tel-box mail">
+            <a href="tel:+380961111111" class="tel">
+              <svg class="mail-tel-icon" width="10px" height="15px">
+                <use href="./images/sprite.svg#icon-image-tel"></use>
+              </svg>
+
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -195,17 +204,40 @@
           <div class="join-container">
             <p class="footer-title">присоединяйтесь</p>
             <ul class="list footer-social-logo">
-              <li class="item">
-                <a href=""><img class="item-logo" src="./images/logo-instagram.svg" alt="logo-instagram" width="20" height="20" /></a>
+              <li class="soc instagram">
+                <svg class="logo" width="20px" height="20px">
+                  <use href="./images/sprite.svg#icon-logo-instagram"></use>
+                </svg>
               </li>
-              <li class="item">
-                <a href=""><img class="item-logo" src="./images/logo-twitter.svg" alt="logo-twitter" width="20" height="20" /></a>
+              <li class="soc twitter">
+                <svg class="logo" width="20px" height="20px">
+                  <use href="./images/sprite.svg#icon-logo-twitter"></use>
+                </svg>
               </li>
-              <li class="item">
-                <a href=""><img class="item-logo" src="./images/logo-facebook.svg" alt="logo-facebook" width="20" height="20" /></a>
+              <li class="soc facebook">
+                <svg class="logo" width="20px" height="20px">
+                  <use href="./images/sprite.svg#icon-logo-facebook"></use>
+                </svg>
               </li>
-              <li class="item">
-                <a href=""><img class="item-logo" src="./images/logo-linkedin.svg" alt="logo-linkedin" width="20" height="20" /></a>
+              <li class="soc linkedin">
+                <svg class="logo" width="20px" height="20px">
+                  <use href="./images/sprite.svg#icon-logo-linkedin"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <!-- Sign up -->
+          <div class="sign-up-container">
+            <p class="footer-title">Подпишитесь на рассылку</p>
+            <ul class="list">
+              <li class="list-email">E-mail</li>
+              <li class="list-button">
+                <button class="footer-button">
+                  Подписаться
+                  <svg class="button-icon">
+                    <use href="./images/sprite.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
               </li>
             </ul>
           </div>
