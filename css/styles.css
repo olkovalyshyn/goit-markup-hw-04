@@ -140,7 +140,23 @@ button {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+}
+.tel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+}
 
+.mail-tel-icon {
+  background-size: contain;
+  margin-right: 10px;
+}
 /* Header Psevdo-element */
 /* .mail-tel-box::before {
   display: block;
@@ -170,10 +186,6 @@ button {
 }
 .mail-tel-box {
   display: flex;
-}
-.mail-tel-box .mail,
-.mail-tel-box .tel {
-  margin-left: 10px;
 }
 
 /* hero */
