@@ -7,6 +7,7 @@
   --temporary-background-color: #808080;
   --button-background-color: #f5f4fa;
   --footer-background-color: #2f303a;
+  --social-logo-base-color: #afb1b8;
 }
 .container {
   margin-left: auto;
@@ -81,7 +82,7 @@ button {
   /* background-color: green; */
 }
 
-/* .site-nav .item + .item {
+.site-nav .item + .item {
   margin-left: 50px;
 }
 /* ДРУГИЙ ВАРІАНТ ДОАБАВИТИ марджини між елемнтами .site-nav .item:not(:last-child) {
@@ -118,10 +119,16 @@ button {
   color: var(--hover-logo-web-color);
 }
 
-.mail:hover,
-.tel:hover {
+.mail-tel-box .mail:hover,
+.mail-tel-box .tel:hover {
   color: var(--hover-logo-web-color);
+  cursor: pointer;
 }
+.mail-tel-box .mail:hover .mail-tel-icon,
+.mail-tel-box .tel:hover .mail-tel-icon {
+  fill: var(--hover-logo-web-color);
+}
+
 .mail-tel-info {
   display: flex;
   margin-left: auto;
@@ -132,7 +139,7 @@ button {
 }
 
 /* Header Psevdo-element */
-.mail-tel-box::before {
+/* .mail-tel-box::before {
   display: block;
   content: "";
   width: 16px;
@@ -147,7 +154,7 @@ button {
 }
 .mail-tel-box.mail::before {
   background-image: url("../images/image-tel.svg");
-}
+} */
 
 .mail-tel-info .item + .item {
   margin-left: 30px;
@@ -240,7 +247,7 @@ button {
 }
 
 /* Soft Psevdo-element */
-.soft-list > .item::before {
+/* .soft-list > .item::before {
   display: block;
   content: "";
   height: 120px;
@@ -261,7 +268,7 @@ button {
 }
 .soft-list > .item:nth-child(4)::before {
   background-image: url("../images/soft-4.svg");
-}
+} */
 
 .soft-list .item + .item {
   margin-left: 30px;
@@ -376,16 +383,16 @@ img {
   outline: 2px solid tomato;
 } */
 
-.soc::after {
+/* .soc::after {
   content: "";
   display: block;
   width: 44px;
   height: 44px;
-  /* background-image: url("../images/logo-instagram.svg"), url("../images/logo-linkedin.svg"); */
+  background-image: url("../images/logo-instagram.svg"), url("../images/logo-linkedin.svg");
   background-repeat: no-repeat;
   background-position: center;
   justify-content: space-between;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 .instagram::after {
   background-image: url("../images/logo-instagram.svg");
@@ -403,8 +410,8 @@ img {
   background-image: url("../images/logo-facebook.svg");
 }
 .linkedin::after {
-  background-image: url("../images/logo-linkedin.svg");
-}
+  background-image: url("../images/logo-linkedin.svg"); */
+/* } */
 .team-list .item {
   padding-bottom: 24px;
   background-color: var(--white-color);
@@ -437,6 +444,29 @@ img {
 .section-title.team {
   padding-top: 94px;
   margin-bottom: 50px;
+}
+
+.soc > .logo {
+  display: block;
+  fill: var(--social-logo-base-color);
+  background-position: 50% 50%;
+}
+
+.soc > .logo:hover,
+.soc > .logo:focus {
+  fill: var(--white-color);
+}
+.soc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.soc:hover {
+  background-color: var(--hover-logo-web-color);
 }
 
 /* Regular customers */
@@ -567,9 +597,24 @@ img {
   color: #ffffff;
 }
 
-.footer-social-logo .item-logo:hover {
-  background-color: var(--hover-logo-web-color);
+.sign-up-container .list {
+  display: flex;
+  padding-left: 0px;
+  outline: 1px solid red;
 }
+.sign-up-container .list-email,
+.sign-up-container .list-button {
+  outline: 1px solid red;
+}
+
+.button-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* .footer-social-logo .item-logo:hover {
+  background-color: var(--hover-logo-web-color);
+} */
 
 .developers {
   margin-bottom: 0px;
