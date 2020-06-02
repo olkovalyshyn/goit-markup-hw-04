@@ -73,6 +73,8 @@ button {
 
 .site-nav {
   display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
   margin-left: 85px;
   padding-left: 0px;
 }
@@ -320,6 +322,7 @@ button {
 .line {
   border-bottom: 1px solid #ececec;
 }
+
 /* Tech */
 .tech-list {
   display: flex;
