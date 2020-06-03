@@ -739,7 +739,6 @@ img {
   margin-bottom: 4px;
   padding-left: 0px;
   padding-bottom: 0px;
-  width: 322px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -786,7 +785,6 @@ img {
 
 .card-content {
   padding-left: 24px;
-  padding-right: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
   border: 1px solid #eeeeee;
